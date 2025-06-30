@@ -1,6 +1,8 @@
 package A1sort;
 
 import java.util.Arrays;
+import java.util.PriorityQueue;
+import java.util.Queue;
 
 // 트리 탐색 + 재귀적 호출
 public class A01HeapSort구현 {
@@ -24,6 +26,12 @@ public class A01HeapSort구현 {
 
         // 내림차순 정렬
         System.out.println(Arrays.toString(arr));
+
+        // PriorityQueue를 통한 정렬 방법
+        // 복잡도 - O(nlogn)
+        Queue<Integer> pq = new PriorityQueue<>(Arrays.asList(7, 6, 5, 8, 3, 5, 9, 1, 6));
+        System.out.println(pq.poll());      // O(logn)
+        pq.add(6);                          // O(logn)
     }
 
     static void heapify(int[] arr, int parent, int length) {
