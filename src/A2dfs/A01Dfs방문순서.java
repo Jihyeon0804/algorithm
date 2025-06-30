@@ -5,8 +5,10 @@ import java.util.Comparator;
 import java.util.List;
 
 public class A01Dfs방문순서 {
+
     static List<List<Integer>> adjList;
     static boolean[] visited;
+
     public static void main(String[] args) {
 
         // 방문할 수 있는 점이 여러 개인 경우, 정점 번호가 작은 것을 먼저 방문
