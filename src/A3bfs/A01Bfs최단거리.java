@@ -51,6 +51,7 @@ public class A01Bfs최단거리 {
         }
 
         System.out.println(distance[target]);
+        System.out.println(Arrays.toString(distance));
 
     }
 }
